@@ -6,7 +6,6 @@ export default defineConfig({
   titleTemplate: 'Serinus - Dart Backend Framework',
   description: "Serinus is a modular backend framework in dart",
   lastUpdated: true,
-  base: '/serinus/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
