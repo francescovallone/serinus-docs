@@ -1,0 +1,2 @@
+# serinus-docs
+Serinus documentation
