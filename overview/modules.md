@@ -1,6 +1,6 @@
-# Module
+# Modules
 
-A module is a class decorated with `@Module()` and extends `SerinusModule` that contains providers, controllers, and can import other modules.
+The modules are a class decorated with `@Module()` and extends `SerinusModule` that contains providers, controllers, and can import other modules.
 
 Each application must have at least one module, the root module, which is the entry point to the application.
 Every other module is a child module of the root module.

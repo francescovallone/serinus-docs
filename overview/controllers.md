@@ -1,6 +1,6 @@
-# Controller
+# Controllers
 
-The controller is responsible for handling incoming *requests* and returning a *response* to the client.
+The controllers are responsible for handling incoming *requests* and returning a *response* to the client.
 
 A controller is a class decorated with `@Controller()` and extends `SerinusController` that contains the routes and the logic to handle the requests.
 
@@ -30,9 +30,29 @@ In this example Serinus will map the `GET /` to the `ping()` handler. The path c
 
 As Serinus will map the handler through the annotation, the method name is **arbitrary**.
 
-## RequestInfo
+### Path
 
-The `@RequestInfo()` annotation will provide access to the `Request` object that contains the information about the HTTP Request.
+If you want to specify the path of the route, you can use the `path` property of the annotation.
+
+```dart
+import 'package:serinus/serinus.dart';
+
+@Controller()
+class AppController extends SerinusController{
+
+  @Get(path: "/ping")
+  String ping(){
+    return "Pong!";
+  }
+
+}
+```
+
+In this example Serinus will map the `GET /ping` endpoint to the `ping()` handler.
+
+## Accessing the Request
+
+The `@Req()` annotation will provide access to the `Request` object that contains the information about the HTTP Request.
 
 ```dart
 import 'package:serinus/serinus.dart';

@@ -4,7 +4,11 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Serinus",
   titleTemplate: 'Serinus - Dart Backend Framework',
-  description: "Serinus is a modular backend framework in dart",
+  description: "Serinus is a framework written in Dart for building efficient and scalable server-side applications.",
+  head: [
+    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/serinus-icon-32x32.png"}],
+    ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/serinus-icon-16x16.png"}],
+  ],
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -22,13 +26,19 @@ export default defineConfig({
           {
             text: 'Overview',
             items: [
-              { text: 'First Steps', link: '/overview/first-step' },
-              { text: 'Module', link: '/overview/module' },
-              { text: 'Controller', link: '/overview/controller' },
+              { text: 'First Steps', link: '/overview/first-steps' },
+              { text: 'Modules', link: '/overview/modules' },
+              { text: 'Controllers', link: '/overview/controllers' },
+              { text: 'Providers', link: '/overview/providers' },
+              { text: 'Middleware', link: '/overview/middleware' },
             ]
           },
         ]
       },
+      // {
+      //   text: 'Roadmap',
+      //   link: '/roadmap',
+      // },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/francescovallone/serinus' },
