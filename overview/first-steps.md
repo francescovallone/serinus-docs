@@ -1,6 +1,6 @@
 # First steps
 
-After creating a new project with `serinus_cli create <new_project>`,
+After creating a new project with `serinus create <new_project>`,
 here is what you will find inside the `lib/` folder.
 
 ::: code-group
@@ -68,13 +68,13 @@ class AppService extends SerinusProvider{
 
 To start the application there are two options:
 
-- `serinus_cli run`
+- `serinus run`
 - `dart --enable-vm-service lib/main.dart`
 
 The first option is the simplest and is the recommended one. The command provide also some options and flags to customize the execution.
 
-- `serinus_cli run --port=8080` to change the default port
-- `serinus_cli run --dev` to enable the debug mode
-- `serinus_cli run --help` to see all the available options
-- `serinus_cli run --address=localhost` to change the default address
-- `serinus_cli run --directory=./example` to change the working directory
+- `serinus run --port=8080` to change the default port
+- `serinus run --dev` to enable the debug mode
+- `serinus run --help` to see all the available options
+- `serinus run --host=localhost` to change the default host
+- `serinus run --directory=./example` to change the working directory
