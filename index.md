@@ -16,7 +16,7 @@ Serinus is still being developed and many things can change. Use it at your own 
   
 ```console
 dart pub global activate serinus_cli
-serinus_cli create <project_name>
+serinus create <project_name>
 ```
 
 The CLI will create a new project with the following structure:
